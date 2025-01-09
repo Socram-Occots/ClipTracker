@@ -15,6 +15,43 @@
 
 - If you really don't trust downloading the application, feel free to check out the source files and compile them yourself.
 
+## Source Files and Bundling Setup
+
+Instead of a onefile, you can directly use the source files instead:
+
+### Python Dependencies:
+
+- Required:
+
+    ```
+    Python 3 (Version 3.12.8 recomended)
+    Keyboard Version 0.13.5
+
+    ```
+
+- Optional:
+
+    ```
+    Pyinstaller (Version 6.11.1 recomended)
+    ```
+
+### [Download the app folder from this github repo](https://download-directory.github.io/?url=https://github.com/Socram-Occots/ClipTracker/tree/f05a048d56f1283eefae05b86a7e77277dc80f82/app)
+- You may need to unzip the folder from this download link.
+
+### Run `main.py`
+
+### Bundling with Pyinstaller (No onefile):
+
+Cloning this repository is recomended.
+
+From the directory `CLIPTRACKER` inside this respository, run this command.
+
+```
+pyinstaller --windowed --icon icon\cliptrackericon.ico --version-file output-windows\version-info-windows.txt --name cliptracker --distpath output-windows/ app/main.py
+```
+
+### Also, [the Clip Tracker bundle (Windows) can be downloaded directly](https://download-directory.github.io/?url=https://github.com/Socram-Occots/ClipTracker/tree/f05a048d56f1283eefae05b86a7e77277dc80f82/app)
+
 ## Features
 
 **With Clip Tracker**, you can **start a timeline** when your stream (or any recorded event) begins,
