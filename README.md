@@ -7,14 +7,22 @@
 - Disatisfied with the auto-clip option that Twitch.tv (or any streaming/recording method) gives you?
 - Do you want/need a light and straightforward application to mark moments onto a timeline?
 
+## [Download Windows](https://github.com/Socram-Occots/ClipTracker/raw/refs/heads/main/output-windows/cliptracker.exe) -------------------- [Download Linux](https://github.com/Socram-Occots/ClipTracker/raw/refs/heads/main/output-linux/cliptracker)
+
+### **WARNING** Your Anti-Virus is going to cry and cry about downloading and running Clip Tracker. 
+
+- I am solo developer and a novice. Fixing something like this is out of my scope for now.
+
+- If you really don't trust downloading the application, feel free to check out the source files and compile them yourself.
+
+## Features
+
 **With Clip Tracker**, you can **start a timeline** when your stream (or any recorded event) begins,
  **mark certain moments** on it, end it, and **save it!**
 
 **Save countess hours** of searching by referencing the timestamps **right at your fingertips!**
 
-## Features
-
-- **Limitless Timeline Marking**:
+- **Limitless Timeline Marking**
 
     - Make, Mark, and Save as many Timeline as you wish.
 
@@ -46,7 +54,7 @@
 
 - Linux 
 
-    - *WARNING*, it needs Sudo permisions. This is due to the [python keyboard library](https://pypi.org/project/keyboard/).
+    - *WARNING*, it needs Sudo permisions. This is due to the [Python keyboard library](https://pypi.org/project/keyboard/).
     You be able to use something like `sudo setcap cap_dac_read_search+ep ./cliptracker` instead. However, this is untested.
 
 ## Step-by-Step Guides 
