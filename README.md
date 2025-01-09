@@ -4,14 +4,14 @@
 <img src="icon/cliptrackericon.png" alt="drawing" width="200"/>
 
 - Tired of searching through vods to make clips? 
-- Disatisfied with the auto-clip option that Twitch.tv (or any streaming/recording method) gives you?
+- Dissatisfied with the auto-clip option that Twitch.tv (or any streaming/recording method) gives you?
 - Do you want/need a light and straightforward application to mark moments onto a timeline?
 
 ## [Download Windows](https://github.com/Socram-Occots/ClipTracker/raw/refs/heads/main/output-windows/cliptracker.exe) -------------------- [Download Linux](https://github.com/Socram-Occots/ClipTracker/raw/refs/heads/main/output-linux/cliptracker)
 
-### **WARNING** Your Anti-Virus is going to cry and cry about downloading and running Clip Tracker. 
+### **WARNING** Your Anti-Virus will cry and cry about downloading and running Clip Tracker. 
 
-- I am solo developer and a novice. Fixing something like this is out of my scope for now.
+- I am a solo developer and a novice. Fixing something like this is out of my scope for now.
 
 - If you really don't trust downloading the application, feel free to check out the source files and compile them yourself.
 
@@ -24,7 +24,7 @@
 
 - **Limitless Timeline Marking**
 
-    - Make, Mark, and Save as many Timeline as you wish.
+    - Make, Mark, and Save as many timelines as you wish.
 
 - **Customizable Hotkeys**
 
@@ -54,7 +54,7 @@
 
 - Linux 
 
-    - *WARNING*, it needs Sudo permisions. This is due to the [Python keyboard library](https://pypi.org/project/keyboard/).
+    - *WARNING*, it needs Sudo permissions. This is due to the [Python keyboard library](https://pypi.org/project/keyboard/).
     You be able to use something like `sudo setcap cap_dac_read_search+ep ./cliptracker` instead. However, this is untested.
 
 ## Step-by-Step Guides 
@@ -95,17 +95,17 @@
 
     ![Timeline Text Saved](Screenshots/TimelineTxtSaved.jpg)
 
-- To repeat this whole process again, simply using the use the `Start/End Timeline` button and start all over.
+- To repeat this whole process again, simply using the `Start/End Timeline` button and start all over.
 
 ### Utilizing Hotkeys
 
-- You are able to bind a key combination to a an cetain buttons such as `Start/End Timeline`.
+- You are able to bind a key combination to cetain buttons such as `Start/End Timeline`.
 
 - As an example, to rebind `Start/End Timeline`, you must use the `Rebind Timeline Key`.
 
     ![Rebind Timeline Key](Screenshots/RebindTimelineKey.jpg)
 
-- Press a combination of keys on your keyboard, release the combination to set it.
+- Press a combination of keys on your keyboard, and release the combination to set it.
 
     ![Hoykey Example](Screenshots/HotkeyExample.jpg)
 
@@ -123,7 +123,7 @@
 
 ### Choose Where to Save the Timeline Text Files
 
-- You can customize where the timeline text files are save by using the `Choose directory to save timelines` button.
+- You can customize where the timeline text files are saved by using the `Choose directory to save timelines` button.
 
     ![Save Directory](Screenshots/SaveDirectory.jpg)
 
@@ -139,17 +139,17 @@
 
 ## Current Limitations
 
-- Clip Tracker does directly not manage, influence, or connect with any recording/streaming application or website.
+- Clip Tracker does not directly manage, influence, or connect with any recording/streaming application or website.
 
 - Clip Tracker can only detect keys that are considered keyboard keys.
 
-    - If a device is using a marco that executes keyboard hotkeys, that device should work.
+    - If a device is using a macro that executes keyboard hotkeys, that device should work.
 
 - Clip Tracker only provides hotkeys for `Start/End Timeline` and `Place Marker`.
 
 - Clip Tracker cannot import timeline text files to add markers.
 
-- I, the creator of Clip Tracker, am unsuccessful in testing Clip Tracker in a Linux VM Docker environment. When running a linux VM, windows (My host OS) fails to provide the root access to keyboard and mouse activity. This means (as of now) ClipTracker is not well tested on Linux. Help on this part would be greatly appreciated.
+- I, the creator of Clip Tracker, am unsuccessful in testing Clip Tracker in a Linux VM Docker environment. When running a Linux VM, windows (My host OS) fails to provide the root access to keyboard and mouse activity. This means (as of now) ClipTracker is not well-tested on Linux. Help on this part would be greatly appreciated.
 
 ## Feedback
 [Feedback is welcome (Google Forms link)](https://forms.gle/VAUPoc1Qhi4d2XZc6)
