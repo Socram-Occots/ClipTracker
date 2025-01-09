@@ -15,6 +15,8 @@
 
 - If you really don't trust downloading the application, feel free to check out the source files and compile them yourself.
 
+- Any help on the matter would be wonderful. Thank you.
+
 ## Source Files and Bundling Setup
 
 Instead of a onefile, you can directly use the source files instead:
@@ -200,4 +202,4 @@ pyinstaller --windowed --icon icon\cliptrackericon.ico --version-file output-win
 
 
 ## Licence:
-[MIT License](LICENCE)
+[MIT License](LICENCE.txt)
