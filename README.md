@@ -15,6 +15,8 @@
 
 - If you really don't trust downloading the application, feel free to check out the source files and compile them yourself.
 
+- Any help on the matter would be wonderful. Thank you.
+
 ## Features
 
 **With Clip Tracker**, you can **start a timeline** when your stream (or any recorded event) begins,
