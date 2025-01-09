@@ -1,0 +1,31 @@
+# Dockerfile.windows
+# Depreciated
+# Use a Windows Server Core image with Python pre-installed
+FROM mcr.microsoft.com/windows/servercore:ltsc2019
+
+# Install Python (if not already included) and pip
+RUN powershell -Command "curl -o python-installer.exe https://www.python.org/ftp/python/3.12.8/python-3.12.8-amd64.exe; \
+    Start-Process python-installer.exe -ArgumentList '/quiet InstallAllUsers=1 PrependPath=1' -Wait; \
+    Remove-Item python-installer.exe"
+
+
+# Install MinGW (for compiling C extensions) and other necessary build tools
+RUN powershell -Command "Invoke-WebRequest -Uri https://netcologne.dl.sourceforge.net/project/mingw-w64/mingw-w64/mingw-w64-release/mingw-w64-install.exe -OutFile mingw-w64-install.exe ; \
+    Start-Process mingw-w64-install.exe -ArgumentList '/SILENT' -Wait ; \
+    Remove-Item mingw-w64-install.exe"
+
+# Set environment variables for MinGW and Python
+ENV PATH="C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin;C:\\Python\\Scripts;C:\\Python;${PATH}"
+
+# Install Nuitka and Python dependencies
+RUN pip install --no-cache-dir nuitka==2.5.9 \
+    && pip install --no-cache-dir -r requirements.txt
+
+# Set the working directory inside the container
+WORKDIR C:/app
+
+# Copy the application code
+COPY app/ .
+
+# Default command to build the Windows executable
+CMD ["python", "-m", "nuitka", "--standalone", "--onefile", "--enable-plugin=tk-inter", "main.py"]
