@@ -3,4 +3,4 @@ test.py
 cliptrackersettings.json
 **\build
 cliptracker.spec
-start.sh
+*.sh

@@ -8,20 +8,16 @@ RUN apt-get update && apt-get install -y \
     patchelf \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Install Nuitka
-RUN pip install --no-cache-dir nuitka==2.5.9
-
-# Set the working directory inside the container
-WORKDIR /app
+# Install PyInstaller
+RUN pip install --no-cache-dir pyinstaller==6.11.1
 
 # Copy and install Python dependencies
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the application code
-COPY app/ .
+# Copy the entire project to the container
+COPY / .
 
-# Command to build both Linux and Windows executables and remove leftover files
-CMD ["sh", "-c", "\
-    mkdir -p /app/output-linux && \
-    nuitka --standalone --onefile --enable-plugin=tk-inter --output-dir=/app/output main.py"]
+# Command to build the Linux executable using PyInstaller
+CMD sh -c "pyinstaller --onefile --windowed --version-file output-linux/version-info-linux.txt \
+--icon icon/cliptrackericon.png --name cliptracker --distpath /app/output-linux app/main.py"

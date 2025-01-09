@@ -37,7 +37,7 @@ class ClipTracker:
         self.current_keys = dict() 
         self.binding_timeline : bool = False
         self.binding_marker : bool = False
-        self.website : str = "http://www.tutorialspoint.com"
+        self.website : str = "https://github.com/Socram-Occots/ClipTracker?tab=readme-ov-file#step-by-step-guides"
         # Initial key bindings set to empty/None
         self.timeline_key : list[str] = ["None"]
         self.marker_key : list[str] = ["None"]

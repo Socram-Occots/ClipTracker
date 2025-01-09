@@ -44,7 +44,10 @@
 
 - Windows
 
-- Linux
+- Linux 
+
+    - *WARNING*, it needs Sudo permisions. This is due to the [python keyboard library](https://pypi.org/project/keyboard/).
+    You be able to use something like `sudo setcap cap_dac_read_search+ep ./cliptracker` instead. However, this is untested.
 
 ## Step-by-Step Guides 
 
@@ -138,6 +141,8 @@
 
 - Clip Tracker cannot import timeline text files to add markers.
 
+- I, the creator of Clip Tracker, am unsuccessful in testing Clip Tracker in a Linux VM Docker environment. When running a linux VM, windows (My host OS) fails to provide the root access to keyboard and mouse activity. This means (as of now) ClipTracker is not well tested on Linux. Help on this part would be greatly appreciated.
+
 ## Feedback
 [Feedback is welcome (Google Forms link)](https://forms.gle/VAUPoc1Qhi4d2XZc6)
 
@@ -150,4 +155,4 @@
 
 
 ## Licence:
-[MIT License](LICENCE.txt)
+[MIT License](LICENCE)
