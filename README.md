@@ -150,4 +150,4 @@
 
 
 ## Licence:
-[MIT License](LICENCE)
+[MIT License](LICENCE.txt)
