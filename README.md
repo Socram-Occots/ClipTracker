@@ -52,7 +52,7 @@ From the directory `CLIPTRACKER` inside this respository, run this command.
 pyinstaller --windowed --icon icon\cliptrackericon.ico --version-file output-windows\version-info-windows.txt --name cliptracker --distpath output-windows/ app/main.py
 ```
 
-### Also, [the Clip Tracker bundle (Windows) can be downloaded directly](https://download-directory.github.io/?url=https://github.com/Socram-Occots/ClipTracker/tree/f05a048d56f1283eefae05b86a7e77277dc80f82/app)
+### Also, [the Clip Tracker bundle (Windows) can be downloaded directly](https://download-directory.github.io/?url=https://github.com/Socram-Occots/ClipTracker/tree/main/output-windows/cliptracker)
 
 ## Features
 
