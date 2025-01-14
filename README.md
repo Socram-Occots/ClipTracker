@@ -28,7 +28,6 @@ Instead of a onefile, you can directly use the source files instead:
     ```
     Python 3 (Version 3.12.8 recomended)
     Keyboard Version 0.13.5
-
     ```
 
 - Optional:
