@@ -1,2 +1,6 @@
 *.txt
 cliptrackersettings.json
+cliptrackerv1-windows-build.zip
+cliptrackerv1-windows-standalone.zip
+**\cliptracker
+cliptracker.exe

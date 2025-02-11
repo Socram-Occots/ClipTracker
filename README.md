@@ -7,15 +7,13 @@
 - Dissatisfied with the auto-clip option that Twitch.tv (or any streaming/recording method) gives you?
 - Do you want/need a light and straightforward application to mark moments onto a timeline?
 
-## [Download Windows](https://github.com/Socram-Occots/ClipTracker/raw/refs/heads/main/output-windows/cliptracker.exe) -------------------- [Download Linux](https://github.com/Socram-Occots/ClipTracker/raw/refs/heads/main/output-linux/cliptracker)
+## [Download Latest Release](https://github.com/Socram-Occots/ClipTracker/releases)
 
 ### **WARNING** Your Anti-Virus will cry and cry about downloading and running Clip Tracker. 
 
 - I am a solo developer and a novice. Fixing something like this is out of my scope for now.
 
 - If you really don't trust downloading the application, feel free to check out the source files and compile them yourself.
-
-- Any help on the matter would be wonderful. Thank you.
 
 ## Source Files and Bundling Setup
 
